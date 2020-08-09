@@ -3,14 +3,6 @@ import time
 from playsound import playsound # pip install playsound
 
 
-# ARGS:
-## 1. session : How many 20 Min sessions
-## 2. Work-time-min
-## 3. rest-time-sec
-## 4. No-Sound
-## 5. Screen-Splash
-
-
 WORK_TIME_MIN = 20
 REST_TIME_SEC = 20
 
