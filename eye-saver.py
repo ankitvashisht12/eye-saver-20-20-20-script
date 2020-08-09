@@ -10,7 +10,7 @@ REST_TIME_SEC = 30
 start = time.time()
 
 while True:
-	if (time.time() - start)*60 == WORK_TIME_MIN:
+	if (time.time() - start)/60 == WORK_TIME_MIN:
 		playsound( os.path.join('sounds', 'ding.mp3'))
 		time.sleep(REST_TIME_SEC)
 		playsound( os.path.join('sounds', 'end.mp3'))
