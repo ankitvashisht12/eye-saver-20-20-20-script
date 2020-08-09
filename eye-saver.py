@@ -20,12 +20,10 @@ start = time.time()
 while True:
 	if (time.time() - start) == WORK_TIME_MIN:
 		playsound('ding.mp3')
-		start_break = time.time()
-		while True:
-			if time.time() - start_break == REST_TIME_SEC:
-				playsound('end.mp3')
-				start = time.time()
-				break
+		time.sleep(REST_TIME_SEC)
+		playsound('end.mp3')
+		start = time.time()
+		
 
 
 
